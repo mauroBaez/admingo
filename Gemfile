@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # gem 'pg'
-
 # Front
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
