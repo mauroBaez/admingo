@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_tree .
+ *= stub rails_admin/custom/theming.scss
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+
+$primary: #1abc9c;
+$secondary: #2c3e50;
+
+body {
+  background: url('https://source.unsplash.com/1920x1080/?landscape') center fixed;
+  background-size: cover;
+}
+
+.rollinbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.rounded {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border: 2px solid $primary;
+  background: $secondary;
+  color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 70px;
+}
+
+.icon-centered {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
